@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="nodeDecorator" name="Node Decorator" schema="schema/nodeDecorator.exsd"/>
+   <extension-point id="preferredSubNode" name="Preferred Sub-node Type" schema="schema/preferredSubNode.exsd"/>
+   <extension-point id="contextMenu" name="Model Context Menu" schema="schema/contextMenu.exsd"/>
+   <extension-point id="doubleClickAction" name="Double Click Action" schema="schema/doubleClickAction.exsd"/>
+   <extension
+         point="cn.edu.buaa.sei.lmf.runtime.initializer">
+      <initializer
+            class="cn.edu.buaa.sei.lmf.editor.LMFEditorPlugin$LMFEditorPluginInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="cn.edu.buaa.sei.lmf.editor.LMFEditor"
+            default="true"
+            filenames="*.json"
+            icon="icons/elements_obj.gif"
+            id="cn.edu.buaa.sei.lmf.editor"
+            name="LMF Reflective Model Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="cn.edu.buaa.sei.lmf.category"
+            name="Lightweight Modeling Framework">
+      </category>
+      <wizard
+            category="cn.edu.buaa.sei.lmf.category"
+            class="cn.edu.buaa.sei.lmf.editor.wizards.NewModelWizard"
+            icon="icons/elements_obj.gif"
+            id="cn.edu.buaa.sei.lmf.wizard.newModel"
+            name="LMF Model"
+            project="false">
+      </wizard>
+   </extension>
+   <extension
+         point="org.eclipse.ui.elementFactories">
+      <factory
+            class="cn.edu.buaa.sei.lmf.editor.LMFEditorInputFactory"
+            id="cn.edu.buaa.sei.lmf.editor.inputFactory">
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            category="cn.edu.buaa.sei.lmf.category"
+            class="cn.edu.buaa.sei.lmf.navigator.Navigator"
+            icon="icons/elements_obj.gif"
+            id="cn.edu.buaa.sei.lmf.navigator"
+            name="LMF Model Navigator">
+      </view>
+      <category
+            id="cn.edu.buaa.sei.lmf.category"
+            name="Lightweight Modeling Framework">
+      </category>
+   </extension>
+   <extension
+         point="org.eclipse.ui.navigator.viewer">
+      <viewerActionBinding
+            viewerId="cn.edu.buaa.sei.lmf.navigator">
+         <includes>
+            <actionExtension
+                  pattern="org.eclipse.ui.navigator.resources.*">
+            </actionExtension>
+         </includes>
+      </viewerActionBinding>
+      <viewerContentBinding
+            viewerId="cn.edu.buaa.sei.lmf.navigator">
+         <includes>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resourceContent">
+            </contentExtension>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resources.filters.*">
+            </contentExtension>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resources.linkHelper">
+            </contentExtension>
+            <contentExtension
+                  pattern="org.eclipse.ui.navigator.resources.workingSets">
+            </contentExtension>
+            <contentExtension
+                  pattern="cn.edu.buaa.sei.lmf.navigator.modelContent">
+            </contentExtension>
+         </includes>
+      </viewerContentBinding>
+   </extension>
+   <extension
+         point="org.eclipse.ui.navigator.navigatorContent">
+      <navigatorContent
+            activeByDefault="true"
+            contentProvider="cn.edu.buaa.sei.lmf.navigator.NavigatorContentProvider"
+            icon="icons/elements_obj.gif"
+            id="cn.edu.buaa.sei.lmf.navigator.modelContent"
+            labelProvider="cn.edu.buaa.sei.lmf.navigator.NavigatorContentProvider"
+            name="LMF Model"
+            providesSaveables="true">
+         <actionProvider
+               class="cn.edu.buaa.sei.lmf.navigator.ActionProvider">
+            <enablement>
+               <instanceof
+                     value="cn.edu.buaa.sei.lmf.edit.Node">
+               </instanceof>
+            </enablement>
+         </actionProvider>
+         <triggerPoints>
+            <and>
+               <instanceof
+                     value="org.eclipse.core.resources.IFile">
+               </instanceof>
+               <test
+                     property="org.eclipse.core.resources.extension"
+                     value="json">
+               </test></and>
+         </triggerPoints>
+         <enablement>
+            <and>
+               <instanceof
+                     value="org.eclipse.core.resources.IFile">
+               </instanceof>
+               <test
+                     property="org.eclipse.core.resources.extension"
+                     value="json">
+               </test>
+            </and>
+         </enablement>
+         <commonSorter
+               class="cn.edu.buaa.sei.lmf.navigator.NavigatorSorter">
+         </commonSorter>
+      </navigatorContent>
+   </extension>
+   <extension
+         point="org.eclipse.ui.decorators">
+      <decorator
+            class="cn.edu.buaa.sei.lmf.navigator.FileModifiedDecorator"
+            id="cn.edu.buaa.sei.lmf.navigator.modelDecorator"
+            label="LMF Model File Modified Decorator"
+            lightweight="true"
+            state="true">
+         <enablement>
+            <objectClass
+                  name="org.eclipse.core.resources.IFile">
+            </objectClass>
+         </enablement>
+      </decorator>
+   </extension>
+
+</plugin>

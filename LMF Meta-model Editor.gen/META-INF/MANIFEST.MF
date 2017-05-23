@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LMF Meta-model Code Generator
+Bundle-SymbolicName: cn.edu.buaa.sei.lmf.ecore.gen;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: cn.edu.buaa.sei.lmf.ecore.gen.CodeGenPlugin
+Bundle-Vendor: Gong Zhang
+Require-Bundle: org.eclipse.ui;visibility:=reexport,
+ org.eclipse.core.runtime;visibility:=reexport,
+ org.eclipse.core.resources;visibility:=reexport,
+ cn.edu.buaa.sei.lmf.ecore;visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy

@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LMF Reflective Model Editor
+Bundle-SymbolicName: cn.edu.buaa.sei.lmf.editor;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: cn.edu.buaa.sei.lmf.editor.LMFEditorPlugin
+Bundle-Vendor: Gong Zhang
+Require-Bundle: org.eclipse.ui;visibility:=reexport,
+ org.eclipse.ui.ide;visibility:=reexport,
+ org.eclipse.ui.navigator;visibility:=reexport,
+ org.eclipse.core.runtime;visibility:=reexport,
+ org.eclipse.core.resources;visibility:=reexport,
+ org.eclipse.ui.navigator.resources;visibility:=reexport,
+ cn.edu.buaa.sei.lmf.runtime;visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: cn.edu.buaa.sei.lmf.edit,
+ cn.edu.buaa.sei.lmf.editor,
+ cn.edu.buaa.sei.lmf.editor.menus,
+ cn.edu.buaa.sei.lmf.editor.property,
+ cn.edu.buaa.sei.lmf.navigator
+Bundle-ActivationPolicy: lazy

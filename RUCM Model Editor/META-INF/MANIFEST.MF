@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RUCM Model Editor
+Bundle-SymbolicName: cn.edu.buaa.sei.rucm;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: cn.edu.buaa.sei.rucm.RUCMPlugin
+Bundle-Vendor: Gong Zhang
+Require-Bundle: org.eclipse.ui;visibility:=reexport,
+ org.eclipse.core.runtime;visibility:=reexport,
+ cn.edu.buaa.sei.lmf.runtime;visibility:=reexport,
+ cn.edu.buaa.sei.lmf.editor;visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: ca.carleton.sce.squall.ucmeta,
+ ca.carleton.sce.squall.ucmeta.util,
+ cn.edu.buaa.sei.rucm,
+ cn.edu.buaa.sei.rucm.decorators,
+ cn.edu.buaa.sei.rucm.diagram,
+ cn.edu.buaa.sei.rucm.diagram.menus,
+ cn.edu.buaa.sei.rucm.diagram.notations,
+ cn.edu.buaa.sei.rucm.diagram.widgets,
+ cn.edu.buaa.sei.rucm.menus,
+ cn.edu.buaa.sei.rucm.res,
+ cn.edu.buaa.sei.rucm.spec,
+ cn.edu.buaa.sei.rucm.spec.commands,
+ cn.edu.buaa.sei.rucm.spec.keywords,
+ cn.edu.buaa.sei.rucm.spec.rows,
+ cn.edu.buaa.sei.rucm.spec.widgets,
+ cn.edu.buaa.sei.rucm.wizards,
+ co.gongzh.snail,
+ co.gongzh.snail.event,
+ co.gongzh.snail.layer,
+ co.gongzh.snail.text,
+ co.gongzh.snail.util
+Bundle-ClassPath: .,
+ lib/ucmeta.jar,
+ lib/snail-gui-5.jar
+Bundle-ActivationPolicy: lazy

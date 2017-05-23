@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="cn.edu.buaa.sei.rucm.feature"
+      label="RUCM Model Editor"
+      version="1.0.0.qualifier"
+      provider-name="Gong Zhang">
+
+   <description url="http://www.zen-tools.com">
+      This application can only be distributed for teaching with a written authorisation. For further information, please contact contact@zen-tools.com
+   </description>
+
+   <copyright url="http://www.zen-tools.com">
+      This application can only be distributed for teaching with a written authorisation. For further information, please contact contact@zen-tools.com
+   </copyright>
+
+   <license url="http://www.zen-tools.com">
+      This application can only be distributed for teaching with a written authorisation. For further information, please contact contact@zen-tools.com
+   </license>
+
+   <plugin
+         id="cn.edu.buaa.sei.rucm"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

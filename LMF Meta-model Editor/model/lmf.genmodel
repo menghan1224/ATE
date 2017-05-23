@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/LMF Meta-model Editor/src" modelPluginID="cn.edu.buaa.sei.lmf.ecore"
+    modelName="Lmf" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
+    copyrightFields="false">
+  <foreignModel>lmf.ecore</foreignModel>
+  <genPackages prefix="LMF" basePackage="cn.edu.buaa.sei" disposableProviderFactory="true"
+      ecorePackage="lmf.ecore#/">
+    <genClasses ecoreClass="lmf.ecore#//Package">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lmf.ecore#//Package/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lmf.ecore#//Package/namePrefix"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lmf.ecore#//Package/types"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="lmf.ecore#//Extension">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lmf.ecore#//Extension/extensionID"/>
+    </genClasses>
+    <genClasses ecoreClass="lmf.ecore#//Type">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lmf.ecore#//Type/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference lmf.ecore#//Type/superTypes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lmf.ecore#//Type/categories"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lmf.ecore#//Type/abstract"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lmf.ecore#//Type/final"/>
+    </genClasses>
+    <genClasses ecoreClass="lmf.ecore#//Category">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lmf.ecore#//Category/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lmf.ecore#//Category/attributes"/>
+    </genClasses>
+    <genClasses ecoreClass="lmf.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lmf.ecore#//Attribute/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference lmf.ecore#//Attribute/valueType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute lmf.ecore#//Attribute/containment"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference lmf.ecore#//Attribute/valueTypeParameter"/>
+    </genClasses>
+    <genClasses ecoreClass="lmf.ecore#//ValueTypeParameter">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference lmf.ecore#//ValueTypeParameter/type"/>
+    </genClasses>
+    <genClasses ecoreClass="lmf.ecore#//ImportedType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference lmf.ecore#//ImportedType/import"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

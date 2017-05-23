@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: cn.edu.buaa.sei.lmf.ecore.edit;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-ClassPath: .
+Bundle-Activator: cn.edu.buaa.sei.lmf.provider.LmfEditPlugin$Implementation
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: cn.edu.buaa.sei.lmf.provider
+Require-Bundle: org.eclipse.core.runtime;visibility:=reexport,
+ org.eclipse.emf.ecore.edit;visibility:=reexport,
+ cn.edu.buaa.sei.lmf.ecore;visibility:=reexport
+Bundle-ActivationPolicy: lazy

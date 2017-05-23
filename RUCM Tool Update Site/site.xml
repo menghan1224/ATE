@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/ca.carleton.sce.squall.atoucan.feature_1.0.0.201311221433.jar" id="ca.carleton.sce.squall.atoucan.feature" version="1.0.0.201311221433">
+      <category name="cn.edu.buaa.sei.rucmtool.category"/>
+   </feature>
+   <feature url="features/cn.edu.buaa.sei.lmf.ecore.feature_1.0.0.201311221433.jar" id="cn.edu.buaa.sei.lmf.ecore.feature" version="1.0.0.201311221433">
+      <category name="cn.edu.buaa.sei.rucmtool.category"/>
+   </feature>
+   <feature url="features/cn.edu.buaa.sei.lmf.editor.feature_1.0.0.201311221433.jar" id="cn.edu.buaa.sei.lmf.editor.feature" version="1.0.0.201311221433">
+      <category name="cn.edu.buaa.sei.rucmtool.category"/>
+   </feature>
+   <feature url="features/cn.edu.buaa.sei.rucm.ecore.feature_1.0.0.201311221433.jar" id="cn.edu.buaa.sei.rucm.ecore.feature" version="1.0.0.201311221433">
+      <category name="cn.edu.buaa.sei.rucmtool.category"/>
+   </feature>
+   <feature url="features/cn.edu.buaa.sei.rucm.feature_1.0.0.201311221433.jar" id="cn.edu.buaa.sei.rucm.feature" version="1.0.0.201311221433">
+      <category name="cn.edu.buaa.sei.rucmtool.category"/>
+   </feature>
+   <category-def name="cn.edu.buaa.sei.rucmtool.category" label="RUCM Tool (Prototype 2)"/>
+</site>

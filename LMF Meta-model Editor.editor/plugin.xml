@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="cn.edu.buaa.sei.lmf.category"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="cn.edu.buaa.sei.lmf.presentation.LMFModelWizardID"
+            name="%_UI_LMFModelWizard_label"
+            class="cn.edu.buaa.sei.lmf.presentation.LMFModelWizard"
+            category="cn.edu.buaa.sei.lmf.category"
+            icon="icons/full/obj16/LMFModelFile.gif">
+         <description>%_UI_LMFModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="cn.edu.buaa.sei.lmf.presentation.LMFEditorID"
+            name="%_UI_LMFEditor_label"
+            icon="icons/full/obj16/LMFModelFile.gif"
+            extensions="lmf"
+            class="cn.edu.buaa.sei.lmf.presentation.LMFEditor"
+            contributorClass="cn.edu.buaa.sei.lmf.presentation.LMFActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
