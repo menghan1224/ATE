@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="ATEExtension/output"/>
+	<classpathentry kind="src" path="ATEExtension/src"/>
+	<classpathentry kind="src" path="Lightweight Modeling Framework/src"/>
+	<classpathentry kind="src" path="LMF Eclipse Runtime/src"/>
+	<classpathentry kind="src" path="LMF Meta-model Editor.edit/src"/>
+	<classpathentry kind="src" path="LMF Meta-model Editor.editor/src"/>
+	<classpathentry kind="src" path="LMF Meta-model Editor.gen/src"/>
+	<classpathentry kind="src" path="LMF Meta-model Editor/src"/>
+	<classpathentry kind="src" path="LMF Reflective Model Editor/src"/>
+	<classpathentry kind="src" path="RUCM Model Editor/src"/>
+	<classpathentry kind="lib" path="LMF Eclipse Runtime/lib/lmf.jar"/>
+	<classpathentry kind="lib" path="RUCM Model Editor/lib/snail-gui-5.jar"/>
+	<classpathentry kind="lib" path="RUCM Model Editor/lib/ucmeta.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="ATEExtension/bin"/>
+</classpath>
