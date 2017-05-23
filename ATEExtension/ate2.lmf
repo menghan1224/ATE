@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cn.edu.buaa.sei.lmf:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cn.edu.buaa.sei.lmf="cn.edu.buaa.sei.lmf.ecore">
+  <types name="AteSentence">
+    <superTypes href="file:/D:/RUCM%20UCMeta/ucmeta.lmf#//@types.1"/>
+    <categories>
+      <attributes name="description" containment="true">
+        <valueType href="file:/D:/RUCM%20UCMeta/primitives.lmf#//@types.5"/>
+      </attributes>
+      <attributes name="para1" containment="true">
+        <valueType href="file:/D:/RUCM%20UCMeta/primitives.lmf#//@types.5"/>
+      </attributes>
+      <attributes name="para2" containment="true">
+        <valueType href="file:/D:/RUCM%20UCMeta/primitives.lmf#//@types.5"/>
+      </attributes>
+      <attributes name="para3" containment="true">
+        <valueType href="file:/D:/RUCM%20UCMeta/primitives.lmf#//@types.5"/>
+      </attributes>
+      <attributes name="para4" containment="true">
+        <valueType href="file:/D:/RUCM%20UCMeta/primitives.lmf#//@types.5"/>
+      </attributes>
+      <attributes name="para5" containment="true">
+        <valueType href="file:/D:/RUCM%20UCMeta/primitives.lmf#//@types.5"/>
+      </attributes>
+      <attributes name="para6" containment="true">
+        <valueType href="file:/D:/RUCM%20UCMeta/primitives.lmf#//@types.5"/>
+      </attributes>
+    </categories>
+  </types>
+  <types xsi:type="cn.edu.buaa.sei.lmf:ImportedType" name="">
+    <categories>
+      <attributes name="containate" valueType="//@types.0" containment="true"/>
+    </categories>
+    <import href="file:/D:/RUCM%20UCMeta/ucmeta.sentence.lmf#//@types.0"/>
+  </types>
+</cn.edu.buaa.sei.lmf:Package>

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ATEExtension
+Bundle-SymbolicName: ATEExtension;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors,
+ cn.edu.buaa.sei.rucm
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6

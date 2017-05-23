@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="cn.edu.buaa.sei.lmf.runtime.metamodel">
+      <typeLoader
+            class="cn.edu.buaa.sei.ate.metamodel.SignalTypeLoader">
+      </typeLoader>
+   </extension>
+   <extension
+         point="cn.edu.buaa.sei.lmf.editor.nodeDecorator">
+      <decorator
+            class="cn.edu.buaa.sei.ate.decorators.SignalDecorator"
+            typeName="ATESignalTypeView">
+      </decorator>
+      <decorator
+            class="cn.edu.buaa.sei.ate.decorators.CapbilityDecorator"
+            typeName="ATECapbilityView">
+      </decorator>
+      <decorator
+            class="cn.edu.buaa.sei.ate.decorators.IODefinitionDecorator"
+            typeName="ATEIODefinitionView">
+      </decorator>
+   </extension>
+   <extension
+         point="org.eclipse.ui.elementFactories">
+      <factory
+            class="cn.edu.buaa.sei.ate.capbilityvieweditor.CapbilityViewEditorInputFactory"
+            id="capbilityview.editorinputfactory">
+      </factory>
+      <factory
+            class="cn.edu.buaa.sei.ate.iodefivieweditor.IOViewEditorInputFactory"
+            id="iodefinitionview.editorinputfactory">
+      </factory>
+      <factory
+            class="cn.edu.buaa.sei.ate.signaltypevieweditor.SignalViewEditorInputFactory"
+            id="signaltypeview.editorinputfactory">
+      </factory>
+   </extension>
+   <extension
+         point="cn.edu.buaa.sei.lmf.editor.doubleClickAction">
+      <delegate
+            class="cn.edu.buaa.sei.ate.capbilityvieweditor.DoubleClickCapbilityView"
+            typeName="ATECapbilityView">
+      </delegate>
+      <delegate
+            class="cn.edu.buaa.sei.ate.iodefivieweditor.DoubleClickIOView"
+            typeName="ATEIODefinitionView">
+      </delegate>
+      <delegate
+            class="cn.edu.buaa.sei.ate.signaltypevieweditor.DoubleClickSignalView"
+            typeName="ATESignalTypeView">
+      </delegate>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="cn.edu.buaa.sei.ate.capbilityvieweditor.CapbilityViewEditor"
+            default="false"
+            id="atecapbilityview.editor"
+            name="CapbilityView Editor">
+      </editor>
+      <editor
+            class="cn.edu.buaa.sei.ate.iodefivieweditor.IOViewEditor"
+            default="false"
+            id="ateioview.editor"
+            name="IOView Editor">
+      </editor>
+      <editor
+            class="cn.edu.buaa.sei.ate.signaltypevieweditor.SignalViewEditor"
+            default="false"
+            id="atesignaltypeview.editor"
+            name="SignalType View">
+      </editor>
+   </extension>
+   <extension
+         point="cn.edu.buaa.sei.rucm.textCellDecorator">
+      <step
+            class="cn.edu.buaa.sei.ate.atesentencetype.CellDecorator">
+      </step>
+   </extension>
+
+
+</plugin>

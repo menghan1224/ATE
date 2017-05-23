@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cn.edu.buaa.sei.lmf:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cn.edu.buaa.sei.lmf="cn.edu.buaa.sei.lmf.ecore">
+  <types name="AteSentence">
+    <superTypes href="file:/D:/RUCM%20UCMeta/ucmeta.lmf#//@types.1"/>
+    <categories>
+      <attributes name="description" containment="true">
+        <valueType href="file:/D:/RUCM%20UCMeta/primitives.lmf#//@types.5"/>
+      </attributes>
+      <attributes name="parameters" containment="true">
+        <valueType href="file:/D:/RUCM%20UCMeta/primitives.lmf#//@types.6"/>
+        <valueTypeParameter>
+          <type href="file:/D:/RUCM%20UCMeta/primitives.lmf#//@types.5"/>
+        </valueTypeParameter>
+      </attributes>
+    </categories>
+  </types>
+</cn.edu.buaa.sei.lmf:Package>
