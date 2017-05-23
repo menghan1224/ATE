@@ -12,5 +12,8 @@ public class test {
 		System.out.println(map instanceof TreeMap);
 
 	}
+	public void getName(){
+		
+	}
 
 }
